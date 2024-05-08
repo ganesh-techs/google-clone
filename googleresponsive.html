@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-image: url(google.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #top{
+            display: flex;
+            justify-content: flex-end;
+            margin: 30px;
+        }
+        #top div a{
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem;
+        }
+        #middle h1{
+            color: white;
+            font-size: 7rem;
+            display: flex;
+            justify-content: center;
+            margin-top: 150px;
+        }
+        #input-box{
+            display: flex;
+            justify-content: center;
+        }
+        input{
+            height: 40px;
+            width: 463px;
+            border-radius: 20px;
+            padding-left: 50px;
+        }
+        .fa-magnifying-glass{
+            position: absolute;
+            margin-left: -500px;
+            margin-top: 15px;
+        }
+        .fa-microphone{
+            position: absolute;
+            margin-left:-75px ;
+            margin-top: 15px;
+        }
+        .fa-camera{
+            margin-left: -39px;
+            margin-top: 15px;
+        }
+        #shortcut{
+            margin: 0 auto;
+            /* margin: 25px; */
+            width: fit-content;
+            margin-top: 20px;
+            padding-left: 10px;
+        }
+        #shortcut:hover{
+            background-color: rgba(0, 0, 0, 0.426);
+            border-radius: 20px;
+        }
+        .fa-plus{
+            margin-top: 25px;
+            margin-left: 12px;
+            font-size: 22px;
+            padding: 25px;
+            border-radius: 50%;
+            background-color: white;
+        }
+        #shortcut p{
+            color: white;
+            width: fit-content;
+            margin: 10px 0 0 10px;
+            padding-right: 14px;
+        }
+        #bottom{
+            display: flex;
+            justify-content: space-between;
+        }
+        #bottom a{
+            color: white;
+            display: flex;
+            justify-content:flex-start;
+            margin-top: 110px;
+            margin-left: 1rem;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        .fa-pen{
+            margin-top: 110px;
+            margin-right: 20px;
+            padding: 8px;
+            color: white;
+            font-size: 13px;
+            background-color: rgba(42, 45, 44, 0.636);
+            border-radius: 50%;
+        }
+        #bottom a:hover{
+            height: fit-content;
+            width: fit-content;
+            background-color: rgba(35, 35, 36, 0.449);
+            padding-left: 10px;
+        }
+        .fa-pen:hover{
+            background-color: rgba(0, 0, 0, 0.488);
+        }
+    </style>
+</head>
+<body>
+    <div id="top">
+        <div><a href="https://www.gmail.com" class="top-right">Gmail</a></div>  
+        <div><a href="https://www.google.com/imghp?hl=en&tab=ri&authuser=0&ogbl"  class="top-right">Images</a></div>
+        <div><a href=""><i class="fa-solid fa-flask top-right"></i></a></div>
+        <div><a href=""><i class="fa-solid fa-bars top-right"></i></a></div>
+        <div><a href=""><i class="fa-solid fa-user top-right"></i></a></div>
+    </div>
+    <div id="middle">
+        <div id="heading"><h1>Google</h1></div>+
+        <div id="search">         
+            <div id="input-box">
+                <input type="text" placeholder="Search Google or Type URL">
+                <div id="icon">
+                    <div><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <div>
+                        <div id="mic"><i class="fa-solid fa-microphone"></i></div>
+                        <div id="cam"><i class="fa-solid fa-camera"></i></div> 
+                    </div>
+                </div>
+            </div>
+        
+            
+            <div id="shortcut">
+                <i class="fa-solid fa-plus"></i>
+                <p>Add shortcut</p>
+            </div>
+            <div id="hover"></div>
+        </div>
+    </div>
+    <div id="bottom">
+        <div><a href="./google.jpg"><i class="fa-solid fa-link"></i>image from google</a></div>
+        <div><i class="fa-solid fa-pen"></i></div>
+    </div>
+</body>
+</html>
